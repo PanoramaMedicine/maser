@@ -170,7 +170,7 @@ maser <- function(path, cond_labels,
                          stringsAsFactors = FALSE, header = TRUE)
     type <-  unlist(strsplit(f, ".", fixed = TRUE))[1]
 
-    #fix corner-case with no replicates
+    # panorama: fix corner-case with no replicates
     events[, counts.col[1]]<-as.character(events[, counts.col[1]])
     events[, counts.col[2]]<-as.character(events[, counts.col[2]])
     events[, "IncLevel1"]<-as.character(events[, "IncLevel1"])
